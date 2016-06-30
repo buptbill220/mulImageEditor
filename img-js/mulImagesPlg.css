@@ -1,0 +1,88 @@
+/*
+author: fangming.fm
+date:   27/6/2016
+   */
+.mulImagesPlg {
+    position: absolute;
+    z-index: 1;
+    width: 416px;
+    height: 738.4px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    border: 1px solid blue;
+    background-image: url(./image/myprops_back.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.mulImagesPlg img {
+    width: auto;
+    height: auto;
+    max-width: 416px;
+    max-height: 738.4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    border: 1px solid #00aaaa; 
+    z-index: 1;
+    display: block;
+    vertical-align: top;
+    opacity: 0.8;
+    filter: alpha(opacity=0.8);
+    cursor: default;
+}
+
+.mulImagesPlg img.active {
+    border: 1px dashed #ff0000;
+    cursor: pointer;
+}
+
+img.nr {
+    border: 1px dashed #ff0000;
+    cursor: n-resize;
+}
+img.sr {
+    border: 1px dashed #ff0000;
+    cursor: s-resize;
+}
+img.er {
+    border: 1px dashed #ff0000;
+    cursor: e-resize;
+}
+img.wr {
+    border: 1px dashed #ff0000;
+    cursor: w-resize;
+}
+img.ner {
+    border: 1px dashed #ff0000;
+    cursor: ne-resize;
+}
+img.nwr {
+    border: 1px dashed #ff0000;
+    cursor: nw-resize;
+}
+img.ser {
+    border: 1px dashed #ff0000;
+    cursor: se-resize;
+}
+img.swr {
+    border: 1px dashed #ff0000;
+    cursor: sw-resize;
+}
+
+.clearfix {
+    overflow:auto;
+    _height:1%;
+}
+

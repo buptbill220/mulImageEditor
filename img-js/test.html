@@ -1,0 +1,23 @@
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="./mulImagesPlg.css" />
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="./mulImagesPlg.js">
+</script>
+</head>
+<body>
+<div class="mulImagesPlg" id="test" style="float: none;width: 600px; height: 450px;">
+<img fmplgdata='{"id": "1", "name": "F_brow", "type": "jaw"}' src="./image/1.jpg" />
+<img fmplgdata='{"id": "2", "name": "F_brow", "type": "jaw"}' src="./image/2.jpg" />
+</div>
+<div id="msg" style="float:none;margin-left:610px;width:400px">test</div>
+<script>
+$(function(){
+var a = $("#test").fmImagePlugin({"msg": "#msg"});
+a.appendImage('<img fmplgdata=\'{"id": "3", "name": "F_brow", "type": "jaw"}\' src="./image/3.jpg" />');
+$("#msg").append(a.getImagesPosFormat())
+});
+
+</script>
+</body>
+</html>
